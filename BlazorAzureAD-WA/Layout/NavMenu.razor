@@ -1,0 +1,63 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">BlazorAzureAD-WA</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <i class="bi bi-house-door-fill h5 mb-0 me-2"></i>
+                Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <i class="bi bi-plus-square-fill h5 mb-0 me-2"></i>Counter
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="weather">
+                <i class="bi bi-cloud-rain h5 mb-0 me-2"></i>Weather
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="javascript:void(0)" @onclick="()=>expanSubMenu= !expanSubMenu">
+                <i class="bi bi-list-nested h5 mb-0 me-2"></i>Style Pages
+            </NavLink>
+            @if (expanSubMenu)
+            {
+                <NavLink class="nav-link" href="stylePage?titleStyle=fw-bold">
+                    <i class="bi bi-type-bold h5 mb-0 me-2"></i>Bold Text
+                </NavLink>
+                <NavLink class="nav-link" href="stylePage?titleStyle=fst-italic">
+                    <i class="bi bi-type-italic h5 mb-0 me-2"></i>Italic Text
+                </NavLink>
+                <NavLink class="nav-link" href="stylePage?titleStyle=text-danger">
+                    <i class="bi bi-type h5 mb-0 me-2"></i>Red Color Text
+                </NavLink>
+                <NavLink class="nav-link" href="stylePage?titleStyle=text-uppercase">
+                    <i class="bi bi-alphabet-uppercase h5 mb-0 me-2"></i>UPPERCASE Text
+                </NavLink>
+                <NavLink class="nav-link" href="stylePage?titleStyle=h1">
+                    <i class="bi bi-card-heading h5 mb-0 me-2"></i>Title Text
+                </NavLink>
+            }
+        </div>
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private bool expanSubMenu;
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

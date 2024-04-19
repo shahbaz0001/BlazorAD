@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAzureAD-WA", "BlazorAzureAD-WA\BlazorAzureAD-WA.csproj", "{0958A1AA-386B-44FA-A861-CE7BE1007A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAzureAD-WATest", "BlazorAzureAD-WATest\BlazorAzureAD-WATest.csproj", "{5DC5DEB3-1078-4055-BF03-C028938A2DDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0958A1AA-386B-44FA-A861-CE7BE1007A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0958A1AA-386B-44FA-A861-CE7BE1007A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0958A1AA-386B-44FA-A861-CE7BE1007A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0958A1AA-386B-44FA-A861-CE7BE1007A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC5DEB3-1078-4055-BF03-C028938A2DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC5DEB3-1078-4055-BF03-C028938A2DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC5DEB3-1078-4055-BF03-C028938A2DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC5DEB3-1078-4055-BF03-C028938A2DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F01F6D33-4070-49B8-8E5E-58069B6A294E}
+	EndGlobalSection
+EndGlobal
